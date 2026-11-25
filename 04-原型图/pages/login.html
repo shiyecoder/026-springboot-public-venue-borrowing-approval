@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>登录 · 校内公共场地借用与审批管理系统</title><link rel="stylesheet" href="../mock.css">
+<style>
+body{background:#0F3542;display:flex;align-items:center;justify-content:center;height:100vh;overflow:hidden}
+.wrap{width:920px;height:520px;display:flex;border-radius:10px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.left{width:480px;background:linear-gradient(160deg,#174A5C,#0F3542 70%);color:#fff;padding:44px 40px;position:relative}
+.left h1{font-size:24px;margin:0 0 10px;font-weight:600;line-height:1.4}
+.left p{color:#A9C9CC;font-size:13px;line-height:1.9;margin:0}
+.left ul{margin:26px 0 0;padding-left:0;list-style:none;color:#CFE3E3;font-size:12.5px;line-height:2.2}
+.left ul li:before{content:"·";margin-right:8px;color:#2A7F86;font-weight:700}
+.left .stamp{position:absolute;left:40px;bottom:34px;color:#7FA6AA;font-size:12px}
+.right{flex:1;background:#fff;padding:52px 44px}
+.right h2{font-size:18px;margin:0 0 6px;color:#174A5C}
+.right .sub{color:#5D7578;font-size:12.5px;margin-bottom:26px}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:12.5px;color:#4A666B;margin-bottom:6px}
+.field input{width:100%;height:40px}
+.row{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:#5D7578;margin-bottom:20px}
+.loginbtn{width:100%;height:40px;font-size:14px;border-radius:6px}
+.roles{margin-top:22px;border-top:1px dashed #DCE7E7;padding-top:14px;color:#5D7578;font-size:12px;line-height:2}
+.roles b{color:#174A5C}
+</style></head><body>
+<div class="wrap">
+  <div class="left">
+    <h1>校内公共场地<br>借用与审批管理系统</h1>
+    <p>统一管理报告厅、展厅、中庭、操场与户外空地的借用申请、风险审批、物资预留、入场交接、巡场与撤场验收。</p>
+    <ul><li>时段冲突校验覆盖布场与撤场</li><li>大型、户外、夜间活动自动追加安保审批</li><li>按活动类型生成准备清单并留痕</li></ul>
+    <div class="stamp">校园资源管理处 · 内部系统</div>
+  </div>
+  <div class="right">
+    <h2>账号登录</h2>
+    <div class="sub">请使用校内统一账号登录，连续 5 次失败将锁定 10 分钟</div>
+    <div class="field"><label>用户名</label><input placeholder="请输入用户名" value="admin"></div>
+    <div class="field"><label>密码</label><input type="password" placeholder="请输入密码" value="admin123"></div>
+    <div class="row"><span>忘记密码请联系场地管理员</span><span>v1.0</span></div>
+    <button class="btn loginbtn">登 录</button>
+    <div class="roles">测试账号：<b>applicant</b> 申请人 · <b>dept</b> 院系审批人 · <b>venue</b> 场地管理员<br>
+    <b>security</b> 安保审批人 · <b>finance</b> 财务登记员 · 密码统一 123456</div>
+  </div>
+</div></body></html>

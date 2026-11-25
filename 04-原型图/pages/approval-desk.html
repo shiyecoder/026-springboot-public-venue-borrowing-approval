@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>借用审批台 · 场地借用申请详情</title>
+<link rel="stylesheet" href="../mock.css"></head><body>
+<div class="side"><div class="brand">场地借用与审批</div><nav>
+<div>场地资源库</div><div>预约日历</div><div>借用申请</div><div class="on">借用审批台</div><div>准备任务板</div>
+<div>入场交接</div><div>活动巡场</div><div>撤场验收</div><div>费用登记</div><div>场地利用看板</div><div>系统管理</div></nav></div>
+<div class="top"><div class="crumb">审批管理 / 借用审批台 / VA-2026-0087</div><div class="sp"></div>
+<div class="who"><span>院系审批人 · 周敏</span><img class="avatar" src="../../uploads/seed/avatar/02.jpg"></div></div>
+<div class="main">
+  <div class="card" style="display:flex;align-items:center;gap:24px;margin-bottom:16px">
+    <div><div class="hint">业务编号</div><b class="num" style="font-size:18px">VA-2026-0087</b></div>
+    <div><div class="hint">当前状态</div><span class="tag t-wait">待院系审批</span></div>
+    <div><div class="hint">责任人</div>周敏</div>
+    <div><div class="hint">创建时间</div><span class="num">2026-10-28 09:12:33</span></div>
+    <div><div class="hint">最近更新</div><span class="num">2026-10-29 14:05:10</span></div>
+    <div style="flex:1"></div>
+    <button class="btn">通过并提交场地审核</button><button class="btn danger">退回</button>
+  </div>
+
+  <div class="grid" style="grid-template-columns:1.6fr 1fr">
+    <div>
+      <div class="card" style="margin-bottom:16px">
+        <h3>活动与场地信息</h3>
+        <table><tbody>
+          <tr><th style="width:120px">活动主题</th><td>2027 届秋季校园招聘双选会</td><th style="width:110px">活动类型</th><td>招聘</td></tr>
+          <tr><th>申请单位</th><td>信息工程学院</td><th>参与人数</th><td class="num">860</td></tr>
+          <tr><th>场地</th><td>大学生活动中心报告厅（东校区）</td><th>风险评估</th><td><span class="tag t-bad">大型 · 需安保</span></td></tr>
+          <tr><th>布场时间</th><td class="num">2026-11-12 14:00:00</td><th>活动时间</th><td class="num">2026-11-13 09:00:00 ~ 17:00:00</td></tr>
+          <tr><th>撤场时间</th><td class="num">2026-11-13 18:00:00</td><th>冲突校验</th><td><span class="tag t-ok">含布撤场无冲突</span></td></tr>
+          <tr><th>物资需求</th><td colspan="3">课桌 60 张、座椅 200 把、音响 1 套、展板 20 块</td></tr>
+          <tr><th>外来人员</th><td colspan="3">企业招聘代表 42 人，已提交名单与身份信息</td></tr>
+          <tr><th>附件</th><td colspan="3"><a href="#">活动方案.pdf</a> · <a href="#">安全预案.pdf</a> · <a href="#">场地布置图.jpg</a></td></tr>
+        </tbody></table>
+      </div>
+      <div class="card">
+        <h3>审批与操作时间轴</h3>
+        <div class="timeline">
+          <div class="ev"><b>提交申请</b><p>李浩然 · 2026-10-28 09:12:33 · 状态 草稿 → 待院系审批</p></div>
+          <div class="ev"><b>院系审批 · 待处理</b><p>责任人 周敏 · 截止 2026-10-31 09:12:33</p></div>
+          <div class="ev"><b>系统校验</b><p>2026-10-28 09:12:40 · 时段冲突检查通过；申请人无未结赔偿</p></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="margin-bottom:16px">
+        <h3>物资预留</h3>
+        <table><thead><tr><th>物资</th><th>需求</th><th>可预留</th><th>状态</th></tr></thead><tbody>
+          <tr><td>课桌</td><td class="num">60</td><td class="num">72</td><td><span class="tag t-ok">可满足</span></td></tr>
+          <tr><td>座椅</td><td class="num">200</td><td class="num">180</td><td><span class="tag t-bad">缺 20</span></td></tr>
+          <tr><td>音响</td><td class="num">1</td><td class="num">1</td><td><span class="tag t-ok">可满足</span></td></tr>
+          <tr><td>展板</td><td class="num">20</td><td class="num">26</td><td><span class="tag t-ok">可满足</span></td></tr>
+        </tbody></table>
+        <p class="hint" style="margin-top:10px">需求超出可预留数量时提交将被拦截，请调整数量或改期。</p>
+      </div>
+      <div class="card">
+        <h3>审批规则提示</h3>
+        <p class="hint" style="line-height:1.9">① 参与人数 &gt; 500 → 追加安保审批<br>
+        ② 户外 / 夜间（20:00 后）→ 追加安保审批<br>
+        ③ 涉及用电搭建 → 追加安保审批<br>
+        ④ 变更时间、场地、人数 → 重新评估审批范围</p>
+      </div>
+    </div>
+  </div>
+</div></body></html>

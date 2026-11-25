@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>场地利用看板</title>
+<link rel="stylesheet" href="../mock.css"></head><body>
+<div class="side"><div class="brand">场地借用与审批</div><nav>
+<div>场地资源库</div><div>预约日历</div><div>借用申请</div><div>借用审批台</div><div>准备任务板</div>
+<div>入场交接</div><div>活动巡场</div><div>撤场验收</div><div>费用登记</div><div class="on">场地利用看板</div><div>系统管理</div></nav></div>
+<div class="top"><div class="crumb">统计 / 场地利用看板</div><div class="sp"></div>
+<div class="who"><span>系统管理员 · 管理员</span><img class="avatar" src="../../uploads/seed/avatar/01.jpg"></div></div>
+<div class="main">
+  <div class="filters">
+    <select><option>最近 30 天</option><option>本月</option><option>本季度</option><option>本年</option></select>
+    <select><option>全部校区</option><option>东校区</option><option>西校区</option></select>
+    <button class="btn">查询</button>
+  </div>
+  <div class="grid" style="grid-template-columns:repeat(6,1fr);margin-bottom:16px">
+    <div class="kpi"><div class="lab">场地利用率</div><div class="val">68.4<span style="font-size:14px">%</span></div></div>
+    <div class="kpi"><div class="lab">申请量</div><div class="val">246</div></div>
+    <div class="kpi"><div class="lab">时段冲突</div><div class="val">11</div></div>
+    <div class="kpi"><div class="lab">取消率</div><div class="val">6.1<span style="font-size:14px">%</span></div></div>
+    <div class="kpi"><div class="lab">准备任务完成率</div><div class="val">92.3<span style="font-size:14px">%</span></div></div>
+    <div class="kpi"><div class="lab">热门场地</div><div class="val" style="font-size:16px">活动中心报告厅</div></div>
+  </div>
+  <div class="grid" style="grid-template-columns:1.4fr 1fr;margin-bottom:16px">
+    <div class="chart"><div class="t">近 6 个月申请趋势</div>
+      <svg viewBox="0 0 520 160" width="100%" height="160">
+        <polyline fill="none" stroke="#2A7F86" stroke-width="2" points="20,120 100,96 180,104 260,72 340,58 420,40 500,32"/>
+        <polyline fill="none" stroke="#174A5C" stroke-width="1.5" stroke-dasharray="5 4" points="20,132 100,120 180,116 260,100 340,92 420,80 500,70"/>
+        <line x1="20" y1="150" x2="500" y2="150" stroke="#DCE7E7"/>
+      </svg>
+      <p class="hint">实线：申请量　虚线：完成量</p></div>
+    <div class="chart"><div class="t">活动类型分布</div>
+      <svg viewBox="0 0 240 160" width="100%" height="160">
+        <circle cx="90" cy="80" r="52" fill="none" stroke="#174A5C" stroke-width="22" stroke-dasharray="120 207"/>
+        <circle cx="90" cy="80" r="52" fill="none" stroke="#2A7F86" stroke-width="22" stroke-dasharray="80 247" stroke-dashoffset="-120"/>
+        <circle cx="90" cy="80" r="52" fill="none" stroke="#316B74" stroke-width="22" stroke-dasharray="60 267" stroke-dashoffset="-200"/>
+        <circle cx="90" cy="80" r="52" fill="none" stroke="#8FB3B3" stroke-width="22" stroke-dasharray="67 260" stroke-dashoffset="-260"/>
+        <text x="165" y="52" font-size="11" fill="#5D7578">讲座 120</text><text x="165" y="76" font-size="11" fill="#5D7578">招聘 80</text>
+        <text x="165" y="100" font-size="11" fill="#5D7578">社团 60</text><text x="165" y="124" font-size="11" fill="#5D7578">展览 67</text>
+      </svg></div>
+  </div>
+  <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+    <div class="chart"><div class="t">院系使用量 Top5</div>
+      <div style="margin-top:8px"><div style="display:flex;justify-content:space-between"><span>信息工程学院</span><span class="num">46</span></div><div class="bar" style="margin:5px 0 10px"><i style="width:92%"></i></div>
+      <div style="display:flex;justify-content:space-between"><span>管理学院</span><span class="num">38</span></div><div class="bar" style="margin:5px 0 10px"><i style="width:76%"></i></div>
+      <div style="display:flex;justify-content:space-between"><span>外国语学院</span><span class="num">27</span></div><div class="bar" style="margin:5px 0 10px"><i style="width:54%"></i></div></div></div>
+    <div class="chart"><div class="t">审批时效对比（小时）</div>
+      <svg viewBox="0 0 240 140" width="100%" height="140">
+        <rect x="30" y="60" width="34" height="60" fill="#174A5C"/><rect x="90" y="88" width="34" height="32" fill="#2A7F86"/>
+        <rect x="150" y="40" width="34" height="80" fill="#316B74"/><text x="34" y="52" font-size="10" fill="#5D7578">院系</text>
+        <text x="96" y="80" font-size="10" fill="#5D7578">场地</text><text x="156" y="32" font-size="10" fill="#5D7578">安保</text>
+        <line x1="20" y1="120" x2="220" y2="120" stroke="#DCE7E7"/></svg></div>
+    <div class="chart"><div class="t">创新结果分布</div>
+      <svg viewBox="0 0 240 140" width="100%" height="140">
+        <rect x="30" y="40" width="40" height="80" fill="#247A58"/><rect x="100" y="60" width="40" height="60" fill="#2A7F86"/>
+        <rect x="170" y="86" width="40" height="34" fill="#A62B32"/><text x="30" y="32" font-size="10" fill="#5D7578">充分 96</text>
+        <text x="100" y="52" font-size="10" fill="#5D7578">较充分 72</text><text x="170" y="78" font-size="10" fill="#5D7578">不足 40</text></svg></div>
+  </div>
+</div></body></html>

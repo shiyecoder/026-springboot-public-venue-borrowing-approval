@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>场地资源库 · 校内公共场地借用与审批管理系统</title>
+<link rel="stylesheet" href="mock.css"></head><body>
+<div class="side"><div class="brand">场地借用与审批</div><nav>
+<div class="on">场地资源库</div><div>预约日历</div><div>借用申请</div><div>借用审批台</div><div>准备任务板</div>
+<div>入场交接</div><div>活动巡场</div><div>撤场验收</div><div>费用登记</div><div>场地利用看板</div>
+<div>系统管理</div></nav></div>
+<div class="top"><div class="crumb">资源管理 / 场地资源库</div><div class="sp"></div>
+<div class="who"><span>场地管理员 · 陈立</span><img class="avatar" src="../../uploads/seed/avatar/03.jpg"></div></div>
+<div class="main">
+  <div class="filters">
+    <input placeholder="场地编号 / 名称" style="width:200px">
+    <select><option>所在校区（全部）</option><option>东校区</option><option>西校区</option><option>南校区</option></select>
+    <select><option>活动类型（全部）</option><option>讲座</option><option>招聘</option><option>社团</option><option>展览</option><option>体育</option></select>
+    <select><option>场地状态（全部）</option><option>可用</option><option>维护中</option><option>停用</option></select>
+    <button class="btn">查询</button><button class="btn ghost">重置</button>
+    <div style="flex:1"></div><button class="btn">新增场地</button><button class="btn ghost">导出</button>
+  </div>
+  <div class="card" style="padding:0">
+    <table><thead><tr><th>现场图片</th><th>场地编号</th><th>场地名称</th><th>校区</th><th>容量</th><th>面积(㎡)</th>
+    <th>适用活动</th><th>开放时段</th><th>费用标准</th><th>状态</th><th>操作</th></tr></thead><tbody>
+      <tr><td><img class="avatar" style="width:56px;height:42px;border-radius:4px" src="../../uploads/seed/venue/01.jpg"></td>
+      <td class="num">V-2026-001</td><td>大学生活动中心报告厅</td><td>东校区</td><td class="num">420</td><td class="num">680.00</td>
+      <td>讲座/招聘/晚会</td><td>08:00-22:00</td><td class="num">¥800/场</td><td><span class="tag t-ok">可用</span></td>
+      <td><a href="approval-desk.html">查看</a> · <a href="#">编辑</a></td></tr>
+      <tr><td><img class="avatar" style="width:56px;height:42px;border-radius:4px" src="../../uploads/seed/venue/02.jpg"></td>
+      <td class="num">V-2026-002</td><td>图书馆一层展厅</td><td>东校区</td><td class="num">150</td><td class="num">320.00</td>
+      <td>展览/社团</td><td>09:00-21:00</td><td class="num">¥400/场</td><td><span class="tag t-ok">可用</span></td>
+      <td><a href="approval-desk.html">查看</a> · <a href="#">编辑</a></td></tr>
+      <tr><td><img class="avatar" style="width:56px;height:42px;border-radius:4px" src="../../uploads/seed/venue/03.jpg"></td>
+      <td class="num">V-2026-003</td><td>理科楼中庭</td><td>西校区</td><td class="num">260</td><td class="num">540.00</td>
+      <td>社团/展览</td><td>08:00-20:00</td><td class="num">¥300/场</td><td><span class="tag t-wait">维护中</span></td>
+      <td><a href="approval-desk.html">查看</a> · <a href="#">编辑</a></td></tr>
+      <tr><td><img class="avatar" style="width:56px;height:42px;border-radius:4px" src="../../uploads/seed/venue/04.jpg"></td>
+      <td class="num">V-2026-004</td><td>东区田径场</td><td>东校区</td><td class="num">2000</td><td class="num">12000.00</td>
+      <td>体育/晚会</td><td>06:00-22:00</td><td class="num">¥1500/场</td><td><span class="tag t-ok">可用</span></td>
+      <td><a href="approval-desk.html">查看</a> · <a href="#">编辑</a></td></tr>
+      <tr><td><img class="avatar" style="width:56px;height:42px;border-radius:4px" src="../../uploads/seed/venue/05.jpg"></td>
+      <td class="num">V-2026-005</td><td>南门户外空地</td><td>南校区</td><td class="num">600</td><td class="num">1800.00</td>
+      <td>户外市集/社团</td><td>08:00-21:00</td><td class="num">¥200/场</td><td><span class="tag t-ok">可用</span></td>
+      <td><a href="approval-desk.html">查看</a> · <a href="#">编辑</a></td></tr>
+    </tbody></table>
+    <div style="display:flex;justify-content:flex-end;gap:8px;padding:12px 16px"><span class="hint">共 20 条</span>
+      <button class="btn ghost">上一页</button><button class="btn">1</button><button class="btn ghost">2</button><button class="btn ghost">下一页</button></div>
+  </div>
+</div></body></html>

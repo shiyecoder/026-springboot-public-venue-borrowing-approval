@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>预约日历</title><link rel="stylesheet" href="../mock.css">
+<style>
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+.cal .hd{font-size:12px;color:#5D7578;text-align:center;padding:6px 0}
+.cal .day{background:#fff;border:1px solid #DCE7E7;border-radius:6px;min-height:96px;padding:8px}
+.cal .day .d{font-size:12px;color:#5D7578;font-variant-numeric:tabular-nums}
+.cal .day.today{border-color:#2A7F86;box-shadow:0 0 0 2px rgba(42,127,134,.12)}
+.ev{font-size:11.5px;border-radius:4px;padding:3px 6px;margin-top:6px;color:#fff;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.ev.setup{background:#8FB3B3}.ev.act{background:#174A5C}.ev.out{background:#316B74}.ev.maint{background:#A62B32}
+.legend{display:flex;gap:16px;font-size:12px;color:#5D7578}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px}
+</style></head><body>
+<div class="side"><div class="brand">场地借用与审批</div><nav>
+<div>场地资源库</div><div class="on">预约日历</div><div>借用申请</div><div>借用审批台</div><div>准备任务板</div>
+<div>入场交接</div><div>活动巡场</div><div>撤场验收</div><div>费用登记</div><div>场地利用看板</div><div>系统管理</div></nav></div>
+<div class="top"><div class="crumb">资源管理 / 预约日历</div><div class="sp"></div>
+<div class="who"><span>场地管理员 · 陈立</span><img class="avatar" src="../../uploads/seed/avatar/03.jpg"></div></div>
+<div class="main">
+  <div class="filters">
+    <select><option>大学生活动中心报告厅</option><option>图书馆一层展厅</option><option>东区田径场</option></select>
+    <select><option>2026 年 11 月</option><option>2026 年 12 月</option></select>
+    <button class="btn">上一月</button><button class="btn ghost">下一月</button>
+    <div style="flex:1"></div>
+    <div class="legend"><span><i style="background:#8FB3B3"></i>布场</span><span><i style="background:#174A5C"></i>活动</span>
+    <span><i style="background:#316B74"></i>撤场</span><span><i style="background:#A62B32"></i>维护</span></div>
+  </div>
+  <div class="card">
+    <div class="cal">
+      <div class="hd">周一</div><div class="hd">周二</div><div class="hd">周三</div><div class="hd">周四</div><div class="hd">周五</div><div class="hd">周六</div><div class="hd">周日</div>
+      <div class="day"><div class="d">2</div></div>
+      <div class="day"><div class="d">3</div></div>
+      <div class="day"><div class="d">4</div></div>
+      <div class="day"><div class="d">5</div><div class="ev maint">设备检修</div></div>
+      <div class="day"><div class="d">6</div></div>
+      <div class="day"><div class="d">7</div></div>
+      <div class="day"><div class="d">8</div></div>
+      <div class="day"><div class="d">9</div></div>
+      <div class="day"><div class="d">10</div><div class="ev setup">布场 14:00 学术论坛</div></div>
+      <div class="day"><div class="d">11</div><div class="ev act">活动 09:00 学术论坛</div><div class="ev out">撤场 18:00</div></div>
+      <div class="day"><div class="d">12</div></div>
+      <div class="day today"><div class="d">13</div><div class="ev setup">布场 14:00 双选会</div></div>
+      <div class="day"><div class="d">14</div><div class="ev act">活动 09:00 双选会</div><div class="ev out">撤场 18:00</div></div>
+      <div class="day"><div class="d">15</div><div class="ev maint">维护 08:00</div></div>
+      <div class="day"><div class="d">16</div></div>
+      <div class="day"><div class="d">17</div><div class="ev act">活动 19:00 社团晚会</div></div>
+      <div class="day"><div class="d">18</div></div>
+      <div class="day"><div class="d">19</div></div>
+      <div class="day"><div class="d">20</div><div class="ev setup">布场 08:00 展览</div></div>
+      <div class="day"><div class="d">21</div><div class="ev act">活动 09:00 展览</div></div>
+      <div class="day"><div class="d">22</div><div class="ev out">撤场 16:00</div></div>
+    </div>
+    <p class="hint" style="margin-top:12px">时段冲突校验范围为：布场开始 → 撤场结束，已占用时段不可重复申请。</p>
+  </div>
+</div></body></html>

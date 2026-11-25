@@ -1,0 +1,11 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>seed</title></head>
+<body style="font:14px sans-serif;padding:20px">正在建立测试会话…<script>
+const p = new URLSearchParams(location.search)
+fetch('/api/auth/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ username: p.get('u') || 'admin', password: 'admin123' }) })
+  .then((r) => r.json())
+  .then((d) => {
+    localStorage.setItem('gh_token', d.data.token)
+    localStorage.setItem('gh_user', JSON.stringify(d.data.user))
+    location.href = p.get('to') || '/dashboard'
+  })
+</script></body></html>

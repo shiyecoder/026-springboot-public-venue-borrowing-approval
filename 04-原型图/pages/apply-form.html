@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>场地借用申请 · 申请人门户</title>
+<link rel="stylesheet" href="../mock.css">
+<style>
+.portal{background:#fff;border-bottom:1px solid #DCE7E7;height:60px;display:flex;align-items:center;padding:0 32px;gap:22px;position:sticky;top:0;z-index:5}
+.portal .logo{font-size:15px;font-weight:600;color:#174A5C}
+.portal a{color:#4A666B;font-size:13.5px}
+.portal a.on{color:#174A5C;font-weight:600}
+.portal .sp{flex:1}
+.pmain{max-width:1180px;margin:24px auto;padding:0 24px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.vcard{background:#fff;border:1px solid #DCE7E7;border-radius:8px;overflow:hidden}
+.vcard img{width:100%;height:132px;object-fit:cover;display:block}
+.vcard .b{padding:12px 14px}
+.vcard .n{font-weight:600;font-size:14px;color:#174A5C}
+.vcard .m{color:#5D7578;font-size:12px;margin-top:6px;line-height:1.8}
+.steps{display:flex;gap:0;margin:18px 0 22px}
+.steps div{flex:1;text-align:center;font-size:12px;color:#5D7578;padding:10px 0;border-bottom:2px solid #DCE7E7}
+.steps div.on{color:#174A5C;font-weight:600;border-bottom-color:#174A5C}
+.formrow{display:flex;gap:18px;margin-bottom:14px}
+.formrow .f{flex:1}
+.formrow label{display:block;font-size:12.5px;color:#4A666B;margin-bottom:6px}
+.formrow input,.formrow select{width:100%}
+textarea{width:100%;border:1px solid #DCE7E7;border-radius:6px;padding:8px 10px;font-size:13px;font-family:inherit;height:74px}
+</style></head><body>
+<div class="portal"><div class="logo">校园场地借用</div><a class="on" href="#">场地大厅</a><a href="#">我的申请</a><a href="#">消息中心</a>
+<div class="sp"></div><span class="hint">信息工程学院 · 李浩然</span><img class="avatar" src="../../uploads/seed/avatar/04.jpg"></div>
+<div class="pmain">
+  <div class="card" style="margin-bottom:16px">
+    <h3>可借用场地</h3>
+    <div class="cards">
+      <div class="vcard"><img src="../../uploads/seed/venue/01.jpg"><div class="b"><div class="n">大学生活动中心报告厅</div>
+        <div class="m">东校区 · 容量 420 人 · 680 ㎡<br>设备：音响 / 投影 / 空调 / 舞台</div></div></div>
+      <div class="vcard"><img src="../../uploads/seed/venue/02.jpg"><div class="b"><div class="n">图书馆一层展厅</div>
+        <div class="m">东校区 · 容量 150 人 · 320 ㎡<br>设备：射灯 / 展架 / 恒温</div></div></div>
+      <div class="vcard"><img src="../../uploads/seed/venue/04.jpg"><div class="b"><div class="n">东区田径场</div>
+        <div class="m">东校区 · 容量 2000 人 · 12000 ㎡<br>设备：看台 / 广播 / 照明</div></div></div>
+    </div>
+  </div>
+  <div class="card">
+    <h3>提交借用申请</h3>
+    <div class="steps"><div class="on">1 填写活动信息</div><div>2 选择场地与时段</div><div>3 物资与附件</div><div>4 提交审批</div></div>
+    <div class="formrow">
+      <div class="f"><label>活动主题 *</label><input value="2027 届秋季校园招聘双选会"></div>
+      <div class="f"><label>活动类型 *</label><select><option>招聘</option><option>讲座</option><option>社团</option><option>展览</option><option>体育</option></select></div>
+      <div class="f"><label>参与人数 *</label><input class="num" value="860"></div>
+    </div>
+    <div class="formrow">
+      <div class="f"><label>场地 *</label><select><option>大学生活动中心报告厅</option></select></div>
+      <div class="f"><label>布场开始 *</label><input class="num" value="2026-11-13 14:00:00"></div>
+      <div class="f"><label>撤场结束 *</label><input class="num" value="2026-11-14 18:00:00"></div>
+    </div>
+    <div class="formrow"><div class="f"><label>活动流程</label><textarea>09:00 开场致辞；09:30 企业宣讲；11:00 双选洽谈；16:30 收尾统计。</textarea></div></div>
+    <div class="formrow"><div class="f"><label>设备物资需求</label><textarea>课桌 60 张、座椅 200 把、音响 1 套、展板 20 块</textarea></div></div>
+    <div class="formrow"><div class="f"><label>外来人员</label><textarea>企业招聘代表 42 人，名单见附件</textarea></div></div>
+    <div class="formrow"><div class="f"><label>附件（活动方案 / 安全预案）</label><input value="已上传 3 个文件：活动方案.pdf、安全预案.pdf、布置图.jpg"></div></div>
+    <div style="display:flex;gap:10px;justify-content:flex-end">
+      <button class="btn ghost">保存草稿</button><button class="btn">提交审批</button>
+    </div>
+    <p class="hint" style="margin-top:10px">提交后系统自动校验：时段冲突（含布撤场）、物资可预留量、是否存在未结损坏赔偿。</p>
+  </div>
+</div></body></html>

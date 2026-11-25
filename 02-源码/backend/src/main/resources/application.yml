@@ -1,0 +1,32 @@
+server:
+  port: 8087
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: venue
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/new_026?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: "123456"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 30MB
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+app:
+  upload-dir: ./uploads/
+  jwt-secret: venue-026-jwt-secret-key-for-graduation-project-2026
+  jwt-expire-hours: 12
